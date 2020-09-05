@@ -16,6 +16,7 @@ const PostDetails = () => {
 
     return (
         <div className="postDetails">
+            <h1 className="detailsHeadline"> Post Details</h1>
             <h1> <span className="title2">Title : </span> {title}</h1>
             <p> <span className="body">Body: </span> {body}</p>
             <Comment id = {id}></Comment>

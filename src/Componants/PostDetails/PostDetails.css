@@ -25,3 +25,9 @@
     color: rgb(255, 208, 0);
     font-weight: 700;
 }
+.detailsHeadline{
+    text-align: center;
+    font-size:35px !important;
+    color: red;
+    font-weight: 700;
+}
