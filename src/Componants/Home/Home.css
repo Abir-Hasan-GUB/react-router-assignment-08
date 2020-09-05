@@ -1,0 +1,22 @@
+body,.MuiCardContent-root,.MuiCardActions-root{
+        background: black;
+}
+.MuiTypography-h5{
+    color: #1877f2;
+    color: cyan;
+    text-transform: capitalize;
+}
+.singlePostBody{
+    border: 2px solid green;
+    margin: 2% 5%;
+    padding: 1%;
+    border-radius: 12px;
+    transition: .5s;
+    box-shadow: 5px 8px 10px rgb(240, 50, 50);
+}
+.singlePostBody:hover{
+    box-shadow: 5px 8px 10px rgb(50, 240, 167);
+}
+.MuiTypography-colorTextSecondary{
+    color: rgb(234, 0, 255) !important;
+}
