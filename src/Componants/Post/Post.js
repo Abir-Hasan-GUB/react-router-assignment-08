@@ -9,7 +9,7 @@ import './Post.css'
 const Post = (props) => {
 
     const {title} = props.post;
- console.log(props);
+//  console.log(props);
     return (
         <div className = "singlePostBody">
            

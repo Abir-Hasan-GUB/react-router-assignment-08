@@ -7,17 +7,32 @@ import {
   Route,
   Link
 } from "react-router-dom";
+import NoMatch from './Componants/NoMatch/NoMatch';
 
 
 function App() {
 
   return (
-    
-  <div>
-    <Header></Header>
-   <Home></Home>
-    
-  </div>
+    <div>
+      <Router>
+        <Switch>
+          <Route path="/home">
+          <Header></Header>
+            <Home></Home>
+          </Route>
+
+          <Route exact path="/">
+          <Header></Header>
+            <Home></Home>
+          </Route>
+
+          <Route path="*">
+            <NoMatch></NoMatch>
+          </Route>
+        </Switch>
+      </Router>
+    </div>
+  
   )
   }
 
