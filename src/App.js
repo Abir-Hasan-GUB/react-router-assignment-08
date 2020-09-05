@@ -8,6 +8,7 @@ import {
   Link
 } from "react-router-dom";
 import NoMatch from './Componants/NoMatch/NoMatch';
+import PostDetails from './Componants/PostDetails/PostDetails';
 
 
 function App() {
@@ -16,24 +17,33 @@ function App() {
     <div>
       <Router>
         <Switch>
+
           <Route path="/home">
-          <Header></Header>
-            <Home></Home>
+            <Header/>
+            <Home/>
+          </Route>
+
+          <Route path="/info">
+          <NoMatch/>
           </Route>
 
           <Route exact path="/">
-          <Header></Header>
-            <Home></Home>
+            <Header/>
+            <Home/>
+          </Route>
+
+          <Route  path="/post/:id">
+            <PostDetails/>
           </Route>
 
           <Route path="*">
-            <NoMatch></NoMatch>
+            <NoMatch/>
           </Route>
+
         </Switch>
       </Router>
     </div>
-  
   )
-  }
+}
 
 export default App;

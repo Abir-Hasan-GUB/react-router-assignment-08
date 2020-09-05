@@ -27,3 +27,6 @@ color: rgb(234, 0, 255) !important;
     font-size: 10px !important;
     text-transform: capitalize !important;
 }
+a:-webkit-any-link{
+    text-decoration: none;
+}

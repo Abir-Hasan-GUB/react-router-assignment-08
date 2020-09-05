@@ -1,0 +1,38 @@
+.commentBody{
+    width: 70%;
+    padding: 2%;
+    background: rgb(46, 46, 46);
+    margin: 25px auto;
+    border-radius: 15px;
+    box-shadow: 5px 5px 12px green;
+    transition: .5s;
+    display: flex;
+}
+.commentBody:hover{
+    box-shadow: 5px 5px 12px rgb(0, 255, 0);
+}
+.commentBody h1{
+    font-size: 16px;
+    color: rgb(255, 230, 0);
+}
+.commentBody h3{
+    font-size: 12px;
+    font-weight: 400;
+    color: cyan;
+}
+.commentBody p{
+    font-size: 16px;
+    font-weight: 400;
+    color: white;;
+}
+.image img{
+    height: 80px;
+    width: 80px;
+    background: red;
+    margin-top: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+.details{
+    margin-left: 10px;
+}
