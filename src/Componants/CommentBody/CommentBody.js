@@ -1,17 +1,17 @@
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 import FakeImage from '../FakeData/FakeData';
-import './CommentBody.css'
+import './CommentBody.css';
+
 const CommentBody = (props) => {
     const { name, email, body } = props.commentBody;
-    const [image , setImage] = useState(FakeImage);
+    const [image, setImage] = useState(FakeImage);
 
-   
     return (
         <div className="commentBody">
             <div className="image">
-               {
-                   image.map(imag => <img src={imag.img} alt="profile picture" />)
-               }
+                {
+                    image.map(imag => <img src={imag.img} alt="profile picture" />)
+                }
             </div>
             <div className="details">
                 <h1>Name: {name}</h1>
